@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<style>
+#wishes{
+  font-size:90px;
+  text-align:center;
+  position:relative;
+  background-size:cover;
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+  background-image:url("minio.png");
+  background-clip:text;
+  -webkit-background-clip:text;
+   color:transparent;}
+
+
+img{
+position:absolute;
+top:430px;
+}
+
+@media screen and (max-width:360px){
+
+
+
+#wishes{
+  font-size:90px;
+  background-image:url("minio.png");
+  background-clip:text;
+  -webkit-background-clip:text;
+   color:transparent;
+}
+
+img{
+width:360px;
+height:200px;
+position:absolute;
+top:430px;
+}
+}
+</style>
+</head>
+<body>
+<p id="pp"></p>
+    <h1 id="wishes"></h1>
+  <img src="moons.png"/>
+
+</body>
+<script>
+var a=document.getElementById("wishes");
+var b=document.getElementById("pp");
+count=3;
+a.innerHTML=count;
+
+var ci=setInterval(counts,1000);
+function counts(){
+count--;
+
+a.innerHTML=count;
+
+if(count==0){
+    clearInterval(ci);
+    
+    a.innerHTML="wish you "
+    setTimeout(() => {
+        
+    a.innerHTML="a very"
+    },2000);
+
+    setTimeout(() => {
+        
+        a.innerHTML="Happy Birthday likki❤"
+        },4000);
+
+setTimeout(() => { 
+        
+        b.innerHTML="You Me forever together 💕, infinite love & care";
+        },8000);
+
+
+setTimeout(() => {
+        
+        b.innerHTML="The day you met me, you just changed rest of my life into full of happiness ,peaceful, worryless, just like a new born baby";
+        },20000);
+
+   setTimeout(() => {
+        
+        b.innerHTML="nuv na bujji baby 😍 kadha so nenu nitho ala rojantha adukuntu vunta , nuv emo rojantha nanu sathyinchu 🙈";
+        },15000);
+
+setTimeout(() => {
+        
+        b.innerHTML="your my beautiful honey💞, every time i look into your eyes you just hold my breath";
+        },11000);
+
+setTimeout(() => {
+        
+        b.innerHTML="<h1 style='text-align:center'>I LOVE YOU BABY</h1>";
+        },22000);
+
+}
+else{
+
+}
+
+}
+
+</script>
+</html>
